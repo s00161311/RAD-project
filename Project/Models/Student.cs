@@ -22,6 +22,9 @@ namespace Project.Models
         [Display(Name = "Student Last Name")]
         public string StudentLName { get; set; }
 
+        [Display(Name = "Email")]
+        public string Email { get; set; }
+
         [ForeignKey("associatedModule")]
         public int ModuleID { get; set; }
         public virtual Module associatedModule { get; set; }

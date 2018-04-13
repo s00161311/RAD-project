@@ -19,6 +19,12 @@ namespace Project.Models
         [Display(Name = "Module Name")]
         public string ModuleName { get; set; }
 
+        [Display(Name = "Description")]
+        public string Description { get; set; }
+
         public virtual ICollection<Student> studentsInModule { get; set; }
+
+        public virtual ICollection<Delivery> Deliveries { get; set; }
+        public virtual ICollection<Enrollment> Enrollments { get; set; }
     }
 }

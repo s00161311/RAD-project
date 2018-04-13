@@ -16,10 +16,15 @@ namespace Project.Models
         [Display(Name = "Enrollment ID")]
         public int EnrollmentID { get; set; }
 
+        [ForeignKey("associatedStudent")]
+        public int StudentID { get; set; }
         [ForeignKey("associatedModule")]
         public int ModuleID { get; set; }
-        public virtual Module associatedModule { get; set; }
 
         public virtual ICollection<Student> studentsEnrolled { get; set; }
+
+        public virtual Student associatedStudent { get; set; }
+        public virtual Module associatedModule { get; set; }
+
     }
 }

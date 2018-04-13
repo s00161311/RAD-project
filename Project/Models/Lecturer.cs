@@ -19,7 +19,8 @@ namespace Project.Models
         [Display(Name = "Lecturer Name")]
         public string LecturerName { get; set; }
 
-       
+
+        public virtual ICollection<Delivery> LecturerDelivery { get; set; }
 
     }
 }

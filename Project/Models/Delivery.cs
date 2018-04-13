@@ -31,5 +31,8 @@ namespace Project.Models
         [ForeignKey("associatedAttendance")]
         public int AttendanceID { get; set; }
         public virtual Attendance associatedAttendance { get; set; }
+
+
+        
     }
 }

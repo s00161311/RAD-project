@@ -198,7 +198,14 @@
     <Compile Include="Migrations\ProjMigrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Attendance.cs" />
+    <Compile Include="Models\DAL\IDelivery.cs" />
+    <Compile Include="Models\DAL\ILecturer.cs" />
+    <Compile Include="Models\DAL\IRepository.cs" />
+    <Compile Include="Models\DAL\IStudent.cs" />
+    <Compile Include="Models\DAL\MainRepository.cs" />
     <Compile Include="Models\Delivery.cs" />
+    <Compile Include="Models\DTO\LecturerDTO.cs" />
+    <Compile Include="Models\DTO\StudentDTO.cs" />
     <Compile Include="Models\Enrollment.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Lecturer.cs" />
